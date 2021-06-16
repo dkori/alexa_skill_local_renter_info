@@ -9,7 +9,7 @@ try:
 except:
     print('dir exists')
 # read in the state/abbrevi crosswalk
-state_frame = pd.read_csv('state_abbrev_crosswalk.csv')
+state_frame = pd.read_csv('lambda/py/resources/state_abbrev_crosswalk.csv')
 # remove D.C. since its not supported
 state_frame = state_frame[~state_frame['State'].str.contains('District')]
 # convert ' ' to '-'
